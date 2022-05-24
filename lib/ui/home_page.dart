@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_web_app_design/ui/sections/bagan_section.dart';
 import 'package:travel_web_app_design/ui/sections/dot_indicator.dart';
 import 'package:travel_web_app_design/ui/sections/header.dart';
+import 'package:travel_web_app_design/ui/sections/recent_holiday.dart';
 import 'package:travel_web_app_design/ui/sections/search_bar.dart';
 
 import 'sections/button_section.dart';
@@ -74,7 +76,39 @@ class _HomePageState extends State<HomePage> {
             const Padding(
               padding: EdgeInsets.all(10.0),
               child: ButtonSection(),
-            )
+            ),
+            Container(
+              padding: const EdgeInsets.only(top: 20),
+              width: MediaQuery.of(context).size.width * 0.2,
+              child: FittedBox(
+                child: Text(
+                  'Recent Holiday Locations',
+                  style: GoogleFonts.playfairDisplay(
+                    fontWeight: FontWeight.w700,
+                    color: const Color(0xFF000000),
+                  ),
+                ),
+              ),
+            ),
+            // const Padding(
+            //   padding: EdgeInsets.all(10.0),
+            //   child: BaganView(),
+            // ),
+            RecentSection(),
+
+            Container(
+              padding: const EdgeInsets.only(top: 20),
+              width: MediaQuery.of(context).size.width * 0.2,
+              child: FittedBox(
+                child: Text(
+                  'Recent Holiday Locations',
+                  style: GoogleFonts.playfairDisplay(
+                    fontWeight: FontWeight.w700,
+                    color: const Color(0xFF000000),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
