@@ -6,117 +6,119 @@ class RecentSection extends StatelessWidget {
   final ScrollController controller = ScrollController();
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: MediaQuery.of(context).size.height * 0.8,
-        //width: double.infinity,
-        padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        const SizedBox(
+          height: 10.0,
+        ),
+        IntrinsicHeight(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               Container(
+                width: MediaQuery.of(context).size.width * 0.4,
+                height: MediaQuery.of(context).size.width * 0.2,
+                padding: const EdgeInsets.only(left: 0, top: 0),
                 decoration: const BoxDecoration(color: Colors.white),
-                padding: EdgeInsets.zero,
-                width: 400,
-                height: 200,
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'images/bagan.jpg',
-                      width: 170,
-                      height: 200,
-                      fit: BoxFit.fitHeight,
-                    ),
-                  ],
+                child: Padding(
+                  padding: EdgeInsets.zero,
+                  child: Row(children: [
+                    Container(
+                      height: MediaQuery.of(context).size.width * 0.2,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('images/kyaingtone.jpg'))),
+                    )
+                  ]),
                 ),
               ),
-              Container(
-                decoration: const BoxDecoration(color: Colors.white),
-                padding: EdgeInsets.zero,
-                width: 400,
-                height: 200,
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'images/bagan.jpg',
-                      width: 170,
-                      height: 300,
-                      fit: BoxFit.fitHeight,
-                    ),
-                  ],
-                ),
+              const VerticalDivider(
+                color: Colors.black,
+                thickness: 2,
               ),
               Container(
+                width: MediaQuery.of(context).size.width * 0.4,
+                height: MediaQuery.of(context).size.width * 0.2,
+                padding: const EdgeInsets.only(left: 0, top: 0),
                 decoration: const BoxDecoration(color: Colors.white),
-                padding: EdgeInsets.zero,
-                width: 400,
-                height: 200,
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'images/kyaingtone.jpg',
-                      width: 170,
-                      height: 200,
-                      fit: BoxFit.fitHeight,
-                    ),
-                  ],
+                child: Padding(
+                  padding: EdgeInsets.zero,
+                  child: Row(children: [
+                    Container(
+                      height: MediaQuery.of(context).size.width * 0.2,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('images/kyaingtone.jpg'))),
+                    )
+                  ]),
                 ),
               ),
-            ]),
-            Row(
-                //crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Container(
-                    decoration: const BoxDecoration(color: Colors.white),
-                    padding: EdgeInsets.zero,
-                    width: 400,
-                    height: 200,
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          'images/sagaing.jpg',
-                          width: 150,
-                          height: 200,
-                          fit: BoxFit.fitHeight,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    decoration: const BoxDecoration(color: Colors.white),
-                    padding: EdgeInsets.zero,
-                    width: 400,
-                    height: 200,
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          'images/bagan.jpg',
-                          width: 150,
-                          height: 200,
-                          fit: BoxFit.fitHeight,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    decoration: const BoxDecoration(color: Colors.white),
-                    padding: EdgeInsets.zero,
-                    width: 400,
-                    height: 200,
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          'images/bagan.jpg',
-                          width: 150,
-                          height: 200,
-                          fit: BoxFit.fitHeight,
-                        ),
-                      ],
-                    ),
-                  ),
-                ]),
-          ],
-        ));
+            ],
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        IntrinsicHeight(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width * 0.4,
+                height: MediaQuery.of(context).size.width * 0.2,
+                padding: const EdgeInsets.only(left: 0, top: 0),
+                decoration: const BoxDecoration(color: Colors.white),
+                child: Padding(
+                  padding: EdgeInsets.zero,
+                  child: Row(children: [
+                    Container(
+                      height: MediaQuery.of(context).size.width * 0.2,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('images/kyaingtone.jpg'))),
+                    )
+                  ]),
+                ),
+              ),
+              const VerticalDivider(
+                color: Colors.black,
+                thickness: 2,
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * 0.4,
+                height: MediaQuery.of(context).size.width * 0.2,
+                padding: const EdgeInsets.only(left: 0, top: 0),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  // borderRadius: BorderRadius.all(Radius.circular(10.0))
+                ),
+                child: Padding(
+                  padding: EdgeInsets.zero,
+                  child: Row(children: [
+                    Container(
+                      height: MediaQuery.of(context).size.width * 0.2,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      decoration: const BoxDecoration(
+                          //borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          image: DecorationImage(
+                              opacity: 3.0,
+                              fit: BoxFit.cover,
+                              image: AssetImage('images/kyaingtone.jpg'))),
+                    )
+                  ]),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
   }
 }

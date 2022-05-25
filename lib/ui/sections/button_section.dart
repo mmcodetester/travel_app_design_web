@@ -25,7 +25,9 @@ class ButtonSection extends StatelessWidget {
           decoration: const BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                  topRight: Radius.circular(20),
                   topLeft: Radius.circular(20.0))),
         ),
         Container(
@@ -34,7 +36,9 @@ class ButtonSection extends StatelessWidget {
           decoration: const BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                  topRight: Radius.circular(20),
                   topLeft: Radius.circular(20.0))),
         ),
         Container(
@@ -43,7 +47,9 @@ class ButtonSection extends StatelessWidget {
           decoration: const BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                  topRight: Radius.circular(20),
                   topLeft: Radius.circular(20.0))),
         )
       ],

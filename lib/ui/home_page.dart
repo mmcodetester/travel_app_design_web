@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_web_app_design/ui/sections/bagan_section.dart';
+//import 'package:travel_web_app_design/ui/sections/bagan_section.dart';
 import 'package:travel_web_app_design/ui/sections/dot_indicator.dart';
 import 'package:travel_web_app_design/ui/sections/header.dart';
 import 'package:travel_web_app_design/ui/sections/recent_holiday.dart';
